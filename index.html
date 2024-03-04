@@ -1,7 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="YOUR DESCRIPTION HERE">
+    <meta name="author" content="YOUR NAME HERE">
+    <title>Starter Template · Bootstrap v5.3.2</title>
 
-<head>
+    <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- END LOADING BOOTSTRAP CSS -->
+    <head>
     
     <meta charset="UTF-8">
      <meta name="Rapunzel Resume" content="This website contains a professional resume for the Disney princess, Rapunzel. It includes her skills, contact info, volunteer work etc.">
@@ -75,12 +84,10 @@
         }
     
     
+        
     </style>
   </head>
     
-    
-
-<body>
     <h1> Resume: <a href="https://princess.disney.com/rapunzel#:~:text=Rapunzel%20is%20a%20spirited%20and,zone%20to%20experience%20her%20dream." target="_blank"> Rapunzel </a> </h1>
     
 <img src="7.-Rapunzel.JPG" width="500" alt="disney princess Rapunzel posing with her hair" >
@@ -121,27 +128,69 @@
     <li>Relevant Courses: Fine Arts, Creative Expression, Leadership in the Arts</li>
  
     </ul>
-
+   <!--start of bootstrap carousell-->
+<div id="carouselExampleIndicators" class="carousel slide"> 
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="rapunzelpainting1%20copyfinal.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="rapunzelpainting2%20copy.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="rapunzelpainting3%20copycrop.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> <!--end of bootstrap carosuel-->
+      
+      
+    
 <h2> Experience </h2>
-<h3> Self Employed Artist (Freelance) </h3>
+      
+<div class="container text-center"> <!--start of bootstrap column-->
+  <div class="row align-items-start">
+    <div class="col">
+      <h3> Self Employed Artist (Freelance) </h3>
     
  <h4> Corona, Kingdom of Corona </h4>
 <ul>
     <li>Dates: 2018 - Present</li>
     <li>Description: Engaged in freelance art projects, specializing in murals, portraits, and various commissioned artworks. Developed a strong online presence through social media platforms to showcase and sell artwork.</li>
     </ul>
-<h4>Corona Arts Academy - Student Leader
+    </div>
+    <div class="col">
+      <h4>Corona Arts Academy - Student Leader
     Corona, Kingdom of Corona</h4>
 <ul>
     <li>Dates: 2020 - 2023</li>
     <li>Description: Collaborated with fellow students to organize art exhibitions, workshops, and events. Led a team of volunteers to ensure successful execution of various art-related activities.</li>
     </ul>
-<h4>Intern - Royal Art Gallery
+    </div>
+    <div class="col"> <!--end of bootstrap column-->
+      <h4>Intern - Royal Art Gallery
     Corona, Kingdom of Corona </h4>
 <ul>
     <li>Dates: 2016 - 2019 </li>
     <li>Description: Assisted in curating and organizing art exhibitions. Contributed to marketing efforts and event coordination. Gained valuable insights into the art industry and exhibition management. </li>
     </ul>
+    </div>
+  </div>
+</div>
+      
+
 
 <h2> Additional Information </h2>
 <ul>
@@ -154,29 +203,49 @@
     
     
 <h2> Volunteering </h2> 
-    <h3> Healing Arts Volunteer </h3>
+    
+<div class="container text-center"> <!--start of bootstrap column-->
+  <div class="row align-items-start">
+    <div class="col">
+<h3> Healing Arts Volunteer </h3>
 <ul>
     <li> Location: Corona Kingdom Hospital </li>
     <li>Dates: 2019 - Present</li>
     <li>Description: Provided art therapy sessions for patients, utilizing creative expression as a means of promoting healing and emotional well-being.</li>
     </ul>
-    
-    <h3>Community Mural Project Coordinator</h3>
+    </div>
+    <div class="col">
+      <h3>Community Mural Project Coordinator</h3>
 <ul>
     <li>Organization: Corona Arts Initiative</li>
     <li>Dates: 2016 - 2017</li>
     <li>Description: Led a team of volunteers in the creation of community murals, fostering a sense of unity and pride among residents. Coordinated logistics, secured materials, and facilitated community engagement.</li>
     </ul>
-    
-    <h3>Corona Festival Art Booth Coordinator</h3>
+    </div>
+    <div class="col">
+      <h3>Corona Festival Art Booth Coordinator</h3>
     <ul>
         <li>Event: Corona Spring Festival</li>
         <li>Dates: Annual Participation</li>
         <li>Description: Took charge of organizing and managing an art booth during the annual Corona Spring Festival. Engaged festival-goers in collaborative art projects and showcased local talent.</li>
     
     </ul>
+    </div>
+  </div> 
+</div> <!--end of bootstrap column-->
+      
+      
     
-    </body>
+    <!-- Custom styles - add your own CSS to this stylesheet -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
     
-    
+
+
+<!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- END LOADING BOOTSTRAP JAVASCRIPT -->
+      
+  </body>
 </html>
